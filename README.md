@@ -103,7 +103,7 @@ Remember, the refund feature of `RefundablePostDeliveryCrowdsale` only allows fo
 
 You can add custom tokens in MyCrypto from the `Add custom token` feature:
 
-**(screenshot)
+**(screenshot)**
 
 You can also do the same for MetaMask. Make sure to purchase higher amounts of tokens in order to see the denomination appear in your wallets as more than a few wei worth.
 
