@@ -127,6 +127,6 @@ Take note of the total gas cost, and compare it to how costly it would be in rea
 
 **(screenshot)**
 
-Crowdsale being tested.
+Crowdsale being tested by deploying to Ropsten testnet to a much smaller amount, like 10,000 wei because you are deploying to a network that you don't have control over, faucets will not likely give out 300 test ether.
 
 **(gif)**
