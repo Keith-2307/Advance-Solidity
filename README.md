@@ -79,9 +79,22 @@ In this contract, you will model the deployment based off of the `ArcadeTokenCro
 
 Test the crowdsale by sending ether to the crowdsale from a different account (**not** the same account that is raising funds), then once you confirm that the crowdsale works as expected, try to add the token to MyCrypto and test a transaction. You can test the time functionality by replacing `now` with `fakenow`, and creating a setter function to modify `fakenow` to whatever time you want to simulate. You can also set the `close` time to be `now + 5 minutes`, or whatever timeline you'd like to test for a shorter crowdsale.
 
+Replacing `now` with `Fakenow` and setting the `close` time to be `now + 5 minutes`. 
 ![Crowdsale](https://user-images.githubusercontent.com/83662813/136310660-f4aad92a-299c-40de-97ad-af841fdd8e0e.gif)
 
+Test the crowdsale by sending ether to the crowdsale from a different account
+(screenshots
+
+Once you confirm that the crowdsale works as expected, try to add the token to MyCrypto and test a transaction.
+(Screenshot)
+
 When sending ether to the contract, make sure you hit the `goal` that you set, and `finalize` the sale using the `Crowdsale`'s `finalize` function. In order to finalize, `isOpen` must return false (`isOpen` comes from `TimedCrowdsale` which checks to see if the `close` time has passed yet). Since the `goal` is 300 ether, you may need to send from multiple accounts. If you run out of prefunded accounts in Ganache, you can create a new workspace.
+
+Prefunded accounts In Ganache
+(screenshot)
+
+Sending ether to the contract, make sure you hit the `goal` that you set, and `finalize` the sale using the `Crowdsale`'s `finalize` function.
+(gif)
 
 Remember, the refund feature of `RefundablePostDeliveryCrowdsale` only allows for refunds once the crowdsale is closed **and** the goal is met. See the [OpenZeppelin RefundableCrowdsale](https://docs.openzeppelin.com/contracts/2.x/api/crowdsale#RefundableCrowdsale) documentation for details as to why this logic is used to prevent potential attacks on your token's value.
 
