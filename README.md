@@ -91,7 +91,7 @@ Once you confirm that the crowdsale works as expected, try to add the token to M
 When sending ether to the contract, make sure you hit the `goal` that you set, and `finalize` the sale using the `Crowdsale`'s `finalize` function. In order to finalize, `isOpen` must return false (`isOpen` comes from `TimedCrowdsale` which checks to see if the `close` time has passed yet). Since the `goal` is 300 ether, you may need to send from multiple accounts. If you run out of prefunded accounts in Ganache, you can create a new workspace.
 
 Prefunded accounts In Ganache
-(screenshot)
+![prefunded accts](https://user-images.githubusercontent.com/83662813/136312021-76b51c59-81b4-4489-a365-63e7841d87dc.png)
 
 Sending ether to the contract, make sure you hit the `goal` that you set, and `finalize` the sale using the `Crowdsale`'s `finalize` function.
 (gif)
