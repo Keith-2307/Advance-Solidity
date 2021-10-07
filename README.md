@@ -1,6 +1,6 @@
 # Advance-Solidity
 
-## Coin Crowdsale 
+## Token Crowdsale 
 ![headline](https://user-images.githubusercontent.com/83662813/136304674-15a182a2-66b0-4598-a00b-9e931ad73017.jpg)
 
 ## Background
