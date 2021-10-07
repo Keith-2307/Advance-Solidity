@@ -82,11 +82,14 @@ Test the crowdsale by sending ether to the crowdsale from a different account (*
 Replacing `now` with `Fakenow` and setting the `close` time to be `now + 5 minutes`. 
 ![Crowdsale](https://user-images.githubusercontent.com/83662813/136310660-f4aad92a-299c-40de-97ad-af841fdd8e0e.gif)
 
-Compile Contract with the `Fakenow` function.
-(screenshot)
+Compile Contract with the `Fakenow` function from Crowdsale.sol file
+![fakenowcompile](https://user-images.githubusercontent.com/83662813/136391458-a4ea76dc-68fd-48fa-af12-e50bb6fa4166.png)
 
-Deployed Contracts testing the `Fakenow` function.
-(Screenshot)
+MetaMask Confirmation with `Fakenow` function from the Crowdsale.sol file.
+**(screenshot)**
+
+Deployed Contracts testing the `Fakenow` function from the Crowdsale.sol file.
+**(Screenshot)**
 
 
 Test the crowdsale by sending ether to the crowdsale from a different account
