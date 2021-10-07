@@ -24,7 +24,7 @@ I will conduct the crowdsale on the Kovan or Ropsten testnet in order to get a r
 Using Remix, I created a file called `PupperCoin.sol` and create a standard `ERC20Mintable` token.
 ![puppercoin](https://user-images.githubusercontent.com/83662813/136305106-29c89ad4-c36f-421e-ad06-28e4dece17b5.png)
 
-The I Created a new contract named `PupperCoinCrowdsale.sol`, and prepared it like a standard crowdsale.
+I Created a new contract named `PupperCoinCrowdsale.sol`, and prepared it like a standard crowdsale.
 ![PuppercoinCrowdsale](https://user-images.githubusercontent.com/83662813/136308820-11aae861-7da1-411b-ba71-f4dba983ee33.gif)
 
 ### Designing the contracts
@@ -40,7 +40,7 @@ I simply needed to fill in the `PupperCoin.sol` file with this [starter code](..
 I ask that you follow the instructions listed below to ensure you are able to run the steps on your own and add the token to MyCrypto, or a similar wallet. I will also
 include information such as the token parameters, token name, crowdsale cap, etc. for simplicity.
 
-Leverage the [Crowdsale](../Starter-Code/Crowdsale.sol) starter code, saving the file in Remix as `Crowdsale.sol`.
+Leverage the [Crowdsale](../Starter-Code/Crowdsale.sol) starter code, saving the file in Remix as `Crowdsale.sol`. This file will be used later in the process to test the `Fakenow` function, as we see below.
 
 You will need to bootstrap the contract by inheriting the following OpenZeppelin contracts:
 
@@ -81,6 +81,13 @@ Test the crowdsale by sending ether to the crowdsale from a different account (*
 
 Replacing `now` with `Fakenow` and setting the `close` time to be `now + 5 minutes`. 
 ![Crowdsale](https://user-images.githubusercontent.com/83662813/136310660-f4aad92a-299c-40de-97ad-af841fdd8e0e.gif)
+
+Compile Contract with the `Fakenow` function.
+(screenshot)
+
+Deployed Contracts testing the `Fakenow` function.
+(Screenshot)
+
 
 Test the crowdsale by sending ether to the crowdsale from a different account
 
