@@ -133,6 +133,10 @@ Deployed Crowdsale Contracts to Ropsten Testnent
 
 ![Deploypuppercoin](https://user-images.githubusercontent.com/83662813/136316033-ab3d82d8-2c62-46a7-b32c-6a4155779e4f.gif)
 
+Crowdsale Deployer Token address and token sale address.
+
+![Deployertokenaddress](https://user-images.githubusercontent.com/83662813/136592970-f40bde36-d110-4d0f-a6ac-1dd36baa843e.png)
+
 Take note of the total gas cost, and compare it to how costly it would be in reality.
 
 **(screenshot)**
