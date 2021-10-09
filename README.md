@@ -96,9 +96,9 @@ Test the crowdsale by sending ether to the crowdsale from a different account
 
 **(screenshots)**
 
-Once you confirm that the crowdsale works as expected, try to add the token to MyCrypto and test a transaction.
+Once you confirm that the crowdsale works as expected, try to add the token to MyCrypto and test a transaction. You can add custom tokens in MyCrypto from the `Add custom token` feature. You can also do the same for MetaMask. Make sure to purchase higher amounts of tokens in order to see the denomination appear in your wallets as more than a few wei worth.
 
-**(Screenshot)**
+![TokenCreation](https://user-images.githubusercontent.com/83662813/136664132-7b5ea1fd-d528-430d-a335-f2ea602a4076.gif)
 
 When sending ether to the contract, make sure you hit the `goal` that you set, and `finalize` the sale using the `Crowdsale`'s `finalize` function. In order to finalize, `isOpen` must return false (`isOpen` comes from `TimedCrowdsale` which checks to see if the `close` time has passed yet). Since the `goal` is 300 ether, you may need to send from multiple accounts. If you run out of prefunded accounts in Ganache, you can create a new workspace.
 
@@ -111,10 +111,7 @@ Sending ether to the contract, make sure you hit the `goal` that you set, and `f
 
 Remember, the refund feature of `RefundablePostDeliveryCrowdsale` only allows for refunds once the crowdsale is closed **and** the goal is met. See the [OpenZeppelin RefundableCrowdsale](https://docs.openzeppelin.com/contracts/2.x/api/crowdsale#RefundableCrowdsale) documentation for details as to why this logic is used to prevent potential attacks on your token's value.
 
-You can add custom tokens in MyCrypto from the `Add custom token` feature:
-You can also do the same for MetaMask. Make sure to purchase higher amounts of tokens in order to see the denomination appear in your wallets as more than a few wei worth.
 
-**(screenshot)**
 
 ## Deploying the Crowdsale
 
