@@ -96,7 +96,11 @@ Deployed Contracts testing the `Fakenow` function from the Crowdsale.sol file.
 
 Test the crowdsale by sending ether to the crowdsale from a different account
 
-**(screenshots)**
+![senttokenpuppercrowdsale](https://user-images.githubusercontent.com/83662813/137350137-aab96510-2b66-4076-a1cf-d576f86bccd7.png)
+
+![senttokenpuppercrowdsale2](https://user-images.githubusercontent.com/83662813/137350268-b0e0e08e-77a8-48a9-acff-ad30231a2957.png)
+
+![senttokenpuppercrowdsale3](https://user-images.githubusercontent.com/83662813/137350338-1fde5131-2ed6-4474-9cb7-440c69cca02e.png)
 
 Once you confirm that the crowdsale works as expected, try to add the token to MyCrypto and test a transaction. You can add custom tokens in MyCrypto from the `Add custom token` feature. You can also do the same for MetaMask. Make sure to purchase higher amounts of tokens in order to see the denomination appear in your wallets as more than a few wei worth.
 
