@@ -75,7 +75,7 @@ When passing the `open` and `close` times, use `now` and `now + 24 weeks` to set
 In this contract, you will model the deployment based off of the `ArcadeTokenCrowdsaleDeployer` you built previously. Leverage the [OpenZeppelin Crowdsale Documentation](https://docs.openzeppelin.com/contracts/2.x/crowdsales) for an example of a contract deploying another, as well as the starter code provided in [Crowdsale.sol](../Starter-Code/Crowdsale.sol).
 ![Deployer](https://user-images.githubusercontent.com/83662813/136309899-1d9125a6-3fda-479b-b26b-d5a0e9a63985.png)
 
-## Testing the Crowdsale
+## Testing the Crowdsale which is the file with the `fakenow` function added.
 
 Test the crowdsale by sending ether to the crowdsale from a different account (**not** the same account that is raising funds), then once you confirm that the crowdsale works as expected, try to add the token to MyCrypto and test a transaction. You can test the time functionality by replacing `now` with `fakenow`, and creating a setter function to modify `fakenow` to whatever time you want to simulate. You can also set the `close` time to be `now + 5 minutes`, or whatever timeline you'd like to test for a shorter crowdsale.
 
@@ -119,11 +119,11 @@ Remember, the refund feature of `RefundablePostDeliveryCrowdsale` only allows fo
 
 
 
-## Deploying the Crowdsale
+## Deploying the PupperCoinCrowdsale
 
 Deploy the crowdsale to the Kovan or Ropsten testnet, and store the deployed address for later. Switch MetaMask to your desired network, and use the `Deploy` tab in Remix to deploy your contracts. Take note of the total gas cost, and compare it to how costly it would be in reality. Since you are deploying to a network that you don't have control over, faucets will not likely give out 300 test ether. You can simply reduce the goal when deploying to a testnet to a much smaller amount, like 10,000 wei.
 
-Compiled Crowdsale Contracts
+Compiled PupperCoinCrowdsale Contracts
 
 ![compiledcrowdsale](https://user-images.githubusercontent.com/83662813/136316182-8175bbe7-3993-4e8f-b0cf-81cd68deaeda.png)
 
@@ -131,11 +131,11 @@ MetaMask confirmation request.
 
 ![Metamask Confirmation](https://user-images.githubusercontent.com/83662813/136316262-d309885e-e82f-466a-917c-96c18c852589.png)
 
-Deployed Crowdsale Contracts to Ropsten Testnent
+Deployed PupperCoinCrowdsale Contracts to Ropsten Testnent
 
 ![Deploypuppercoin](https://user-images.githubusercontent.com/83662813/136316033-ab3d82d8-2c62-46a7-b32c-6a4155779e4f.gif)
 
-Crowdsale Deployer Token address and token sale address.
+PupperCoinCrowdsale Deployer Token address and token sale address.
 
 ![Deployertokenaddress](https://user-images.githubusercontent.com/83662813/136592970-f40bde36-d110-4d0f-a6ac-1dd36baa843e.png)
 
