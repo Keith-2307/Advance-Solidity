@@ -87,7 +87,7 @@ Compile Contract with the `Fakenow` function from Crowdsale.sol file
 
 MetaMask Confirmation with `Fakenow` function from the Crowdsale.sol file.
 
-**(screenshot)**
+![fakenowMeta](https://user-images.githubusercontent.com/83662813/137345432-37e7c0cd-7125-4751-9b88-4c62f2cf3889.png)
 
 Deployed Contracts testing the `Fakenow` function from the Crowdsale.sol file.
 
