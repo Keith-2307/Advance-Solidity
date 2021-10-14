@@ -94,7 +94,7 @@ Deployed Contracts testing the `Fakenow` function from the Crowdsale.sol file.
 ![fakedeploy](https://user-images.githubusercontent.com/83662813/137347415-4ce7e79b-13b9-46a9-a388-6daff5ed1403.png)
 
 
-Test the crowdsale by sending ether to the crowdsale from a different account
+Test the crowdsale (using the PuppercoinCrowdsale file) by sending ether to the crowdsale from a different account
 
 ![senttokenpuppercrowdsale](https://user-images.githubusercontent.com/83662813/137350137-aab96510-2b66-4076-a1cf-d576f86bccd7.png)
 
