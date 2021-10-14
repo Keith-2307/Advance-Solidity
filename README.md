@@ -91,7 +91,7 @@ MetaMask Confirmation with `Fakenow` function from the Crowdsale.sol file.
 
 Deployed Contracts testing the `Fakenow` function from the Crowdsale.sol file.
 
-**(Screenshot)**
+![fakedeploy](https://user-images.githubusercontent.com/83662813/137347415-4ce7e79b-13b9-46a9-a388-6daff5ed1403.png)
 
 
 Test the crowdsale by sending ether to the crowdsale from a different account
