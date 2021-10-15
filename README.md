@@ -111,10 +111,6 @@ When sending ether to the contract, make sure you hit the `goal` that you set, a
 Prefunded accounts In Ganache
 ![prefunded accts](https://user-images.githubusercontent.com/83662813/136312021-76b51c59-81b4-4489-a365-63e7841d87dc.png)
 
-Sending ether to the contract, make sure you hit the `goal` that you set, and `finalize` the sale using the `Crowdsale`'s `finalize` function.
-
-**(gif)**
-
 Remember, the refund feature of `RefundablePostDeliveryCrowdsale` only allows for refunds once the crowdsale is closed **and** the goal is met. See the [OpenZeppelin RefundableCrowdsale](https://docs.openzeppelin.com/contracts/2.x/api/crowdsale#RefundableCrowdsale) documentation for details as to why this logic is used to prevent potential attacks on your token's value.
 
 
@@ -141,8 +137,6 @@ PupperCoinCrowdsale Deployer Token address and token sale address.
 
 Take note of the total gas cost, and compare it to how costly it would be in reality.
 
-**(screenshot)**
+![gascompare](https://user-images.githubusercontent.com/83662813/137422652-2d452bcf-ed3f-4b3b-bfa0-84ad282e7ce7.png)
 
-Crowdsale being tested by deploying to Ropsten testnet to a much smaller amount, like 10,000 wei because you are deploying to a network that you don't have control over, faucets will not likely give out 300 test ether.
-
-**(gif)**
+### Congratulations..You have fund you coin through a crowdsale.
