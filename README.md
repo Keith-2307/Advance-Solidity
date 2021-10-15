@@ -75,7 +75,7 @@ When passing the `open` and `close` times, use `now` and `now + 24 weeks` to set
 In this contract, you will model the deployment based off of the `ArcadeTokenCrowdsaleDeployer` you built previously. Leverage the [OpenZeppelin Crowdsale Documentation](https://docs.openzeppelin.com/contracts/2.x/crowdsales) for an example of a contract deploying another, as well as the starter code provided in [Crowdsale.sol](../Starter-Code/Crowdsale.sol).
 ![Deployer](https://user-images.githubusercontent.com/83662813/136309899-1d9125a6-3fda-479b-b26b-d5a0e9a63985.png)
 
-## Testing the Crowdsale
+## Testing the Crowdsale which is the file with the `fakenow` function added.
 
 Test the crowdsale by sending ether to the crowdsale from a different account (**not** the same account that is raising funds), then once you confirm that the crowdsale works as expected, try to add the token to MyCrypto and test a transaction. You can test the time functionality by replacing `now` with `fakenow`, and creating a setter function to modify `fakenow` to whatever time you want to simulate. You can also set the `close` time to be `now + 5 minutes`, or whatever timeline you'd like to test for a shorter crowdsale.
 
@@ -87,16 +87,20 @@ Compile Contract with the `Fakenow` function from Crowdsale.sol file
 
 MetaMask Confirmation with `Fakenow` function from the Crowdsale.sol file.
 
-**(screenshot)**
+![fakenowMeta](https://user-images.githubusercontent.com/83662813/137345432-37e7c0cd-7125-4751-9b88-4c62f2cf3889.png)
 
 Deployed Contracts testing the `Fakenow` function from the Crowdsale.sol file.
 
-**(Screenshot)**
+![fakedeploy](https://user-images.githubusercontent.com/83662813/137347415-4ce7e79b-13b9-46a9-a388-6daff5ed1403.png)
 
 
-Test the crowdsale by sending ether to the crowdsale from a different account
+Test the crowdsale (using the PuppercoinCrowdsale file) by sending ether to the crowdsale from a different account
 
-**(screenshots)**
+![senttokenpuppercrowdsale](https://user-images.githubusercontent.com/83662813/137350137-aab96510-2b66-4076-a1cf-d576f86bccd7.png)
+
+![senttokenpuppercrowdsale2](https://user-images.githubusercontent.com/83662813/137350268-b0e0e08e-77a8-48a9-acff-ad30231a2957.png)
+
+![senttokenpuppercrowdsale3](https://user-images.githubusercontent.com/83662813/137350338-1fde5131-2ed6-4474-9cb7-440c69cca02e.png)
 
 Once you confirm that the crowdsale works as expected, try to add the token to MyCrypto and test a transaction. You can add custom tokens in MyCrypto from the `Add custom token` feature. You can also do the same for MetaMask. Make sure to purchase higher amounts of tokens in order to see the denomination appear in your wallets as more than a few wei worth.
 
@@ -107,19 +111,15 @@ When sending ether to the contract, make sure you hit the `goal` that you set, a
 Prefunded accounts In Ganache
 ![prefunded accts](https://user-images.githubusercontent.com/83662813/136312021-76b51c59-81b4-4489-a365-63e7841d87dc.png)
 
-Sending ether to the contract, make sure you hit the `goal` that you set, and `finalize` the sale using the `Crowdsale`'s `finalize` function.
-
-**(gif)**
-
 Remember, the refund feature of `RefundablePostDeliveryCrowdsale` only allows for refunds once the crowdsale is closed **and** the goal is met. See the [OpenZeppelin RefundableCrowdsale](https://docs.openzeppelin.com/contracts/2.x/api/crowdsale#RefundableCrowdsale) documentation for details as to why this logic is used to prevent potential attacks on your token's value.
 
 
 
-## Deploying the Crowdsale
+## Deploying the PupperCoinCrowdsale
 
 Deploy the crowdsale to the Kovan or Ropsten testnet, and store the deployed address for later. Switch MetaMask to your desired network, and use the `Deploy` tab in Remix to deploy your contracts. Take note of the total gas cost, and compare it to how costly it would be in reality. Since you are deploying to a network that you don't have control over, faucets will not likely give out 300 test ether. You can simply reduce the goal when deploying to a testnet to a much smaller amount, like 10,000 wei.
 
-Compiled Crowdsale Contracts
+Compiled PupperCoinCrowdsale Contracts
 
 ![compiledcrowdsale](https://user-images.githubusercontent.com/83662813/136316182-8175bbe7-3993-4e8f-b0cf-81cd68deaeda.png)
 
@@ -127,18 +127,16 @@ MetaMask confirmation request.
 
 ![Metamask Confirmation](https://user-images.githubusercontent.com/83662813/136316262-d309885e-e82f-466a-917c-96c18c852589.png)
 
-Deployed Crowdsale Contracts to Ropsten Testnent
+Deployed PupperCoinCrowdsale Contracts to Ropsten Testnent
 
 ![Deploypuppercoin](https://user-images.githubusercontent.com/83662813/136316033-ab3d82d8-2c62-46a7-b32c-6a4155779e4f.gif)
 
-Crowdsale Deployer Token address and token sale address.
+PupperCoinCrowdsale Deployer Token address and token sale address.
 
 ![Deployertokenaddress](https://user-images.githubusercontent.com/83662813/136592970-f40bde36-d110-4d0f-a6ac-1dd36baa843e.png)
 
 Take note of the total gas cost, and compare it to how costly it would be in reality.
 
-**(screenshot)**
+![gascompare](https://user-images.githubusercontent.com/83662813/137422652-2d452bcf-ed3f-4b3b-bfa0-84ad282e7ce7.png)
 
-Crowdsale being tested by deploying to Ropsten testnet to a much smaller amount, like 10,000 wei because you are deploying to a network that you don't have control over, faucets will not likely give out 300 test ether.
-
-**(gif)**
+### Congratulations..You have fund you coin through a crowdsale.
