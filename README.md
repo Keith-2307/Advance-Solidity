@@ -139,4 +139,5 @@ Take note of the total gas cost, and compare it to how costly it would be in rea
 
 ![gascompare](https://user-images.githubusercontent.com/83662813/137422652-2d452bcf-ed3f-4b3b-bfa0-84ad282e7ce7.png)
 
+
 ### Congratulations..You have fund you coin through a crowdsale.
