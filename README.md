@@ -33,8 +33,9 @@ I Created a new contract named `PupperCoinCrowdsale.sol`, and prepared it like a
 
 A simple standard `ERC20Mintable` and `ERC20Detailed` contract was used, and hardcoding `18` as the `decimals` parameter, leaving the `initial_supply` parameter alone. Hardcoding the decimals was not necessary however, since most use-cases match Ethereum's default, I can do so.
 
+---
 
-#### Functionality of the Files being used:
+### Functionality of the Files being used:
 
 I ask that you follow the instructions listed below to ensure you are able to run the steps on your own and add the token to MetaMask. I will also
 include information such as the token parameters, token name, crowdsale cap, etc. for simplicity.
@@ -79,7 +80,7 @@ In this contract, you will model the deployment based off of the `ArcadeTokenCro
 
 ![Deployer](https://user-images.githubusercontent.com/83662813/136309899-1d9125a6-3fda-479b-b26b-d5a0e9a63985.png)
 
-## Testing the Crowdsale using the file with the `fakenow` function added, and called Crowdsale.sol.
+### Testing the Crowdsale using the file with the `fakenow` function added, and called Crowdsale.sol.
 
 Test the crowdsale by sending ether to the crowdsale from a different account (**not** the same account that is raising funds), then once you confirm that the crowdsale works as expected, try to add the token to MetaMask and test a transaction. You can test the time functionality by replacing `now` with `fakenow`, and creating a setter function to modify `fakenow` to whatever time you want to simulate. You can also set the `close` time to be `now + 5 minutes`, or whatever timeline you'd like to test for a shorter crowdsale.
 
