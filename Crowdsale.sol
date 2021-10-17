@@ -42,6 +42,9 @@ contract PupperCoinCrowdsale is Crowdsale, MintedCrowdsale, CappedCrowdsale, Tim
         // constructor can stay empty
         
     }
+    function fastforward()public {
+        fakenow =block.timestamp;
+    }
 }
 
 
@@ -73,7 +76,7 @@ contract PupperCoinSaleDeployer {
         
         // @TODO: create the PupperCoinSale and tell it about the token, set the goal, and set the open and close times to now and now + 24 weeks.
         
-        PupperCoinCrowdsale token_sale = new PupperCoinCrowdsale(rate, wallet, pupper_token, goal, fakenow, now + 1 minutes);// set the close time to be now + 5 minutes, to test for a shorter crowdsale.
+        PupperCoinCrowdsale token_sale = new PupperCoinCrowdsale(rate, wallet, pupper_token, goal, fakenow, now + 5 minutes);// set the close time to be now + 5 minutes, to test for a shorter crowdsale.
         token_sale_address = address (token_sale);
         
         // make the PupperCoinSale contract a minter, then have the PupperCoinSaleDeployer renounce its minter role
