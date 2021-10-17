@@ -40,11 +40,11 @@ A simple standard `ERC20Mintable` and `ERC20Detailed` contract was used, and har
 I ask that you follow the instructions listed below to ensure you are able to run the steps on your own and add the token to MetaMask. I will also
 include information such as the token parameters, token name, crowdsale cap, etc. for simplicity.
 
-I simply needed to fill in the `PupperCoin.sol` file with this [starter code](../Starter-Code/PupperCoin.sol), which contains the complete contract that I will need to work with in the Crowdsale. **THIS FILE IS BEING REFERENCED BELOW AS: PUPPERCOIN**
+1. I simply needed to fill in the `PupperCoin.sol` file with this [starter code](../Starter-Code/PupperCoin.sol), which contains the complete contract that I will need to work with in the Crowdsale. **THIS FILE IS BEING REFERENCED BELOW AS: PUPPERCOIN**
 
-Leverage the [Crowdsale](../Starter-Code/Crowdsale.sol) starter code, saving the file in Remix as `PupperCoinCrowdsale.sol`. This file will be used later in the process to test a tranaction and make comparions, as we see below. **THIS IS THE FILE BEING REFERENCED BELOW AS: PUPPERCOINCROWDSALE**
+2. Leverage the [Crowdsale](../Starter-Code/Crowdsale.sol) starter code, saving the file in Remix as `PupperCoinCrowdsale.sol`. This file will be used later in the process to test a tranaction and make comparions, as we see below. **THIS IS THE FILE BEING REFERENCED BELOW AS: PUPPERCOINCROWDSALE**
 
-Leverage the [Crowdsale](../Starter-Code/Crowdsale.sol) starter code, saving the file in Remix as `Crowdsale.sol`. This file will be used later in the process to test the `Fakenow` function, as we see below. **THIS IS THE FILE BEING REFERENCED BELOW AS: CROWDSALE**
+3. Leverage the [Crowdsale](../Starter-Code/Crowdsale.sol) starter code, saving the file in Remix as `Crowdsale.sol`. This file will be used later in the process to test the `Fakenow` function, as we see below. **THIS IS THE FILE BEING REFERENCED BELOW AS: CROWDSALE**
 
 You will need to bootstrap the contract by inheriting the following OpenZeppelin contracts:
 
@@ -103,7 +103,6 @@ Once you confirm that the crowdsale works as expected, try to add the token to M
 
 ![TokenCreation](https://user-images.githubusercontent.com/83662813/136664132-7b5ea1fd-d528-430d-a335-f2ea602a4076.gif)
 
-When sending ether to the contract, make sure you hit the `goal` that you set, and `finalize` the sale using the `Crowdsale`'s `finalize` function. In order to finalize, `isOpen` must return false (`isOpen` comes from `TimedCrowdsale` which checks to see if the `close` time has passed yet). Since the `goal` is 300 ether, you may need to send from multiple accounts. If you run out of prefunded accounts in Ganache, you can create a new workspace.
 
 Prefunded accounts In Ganache
 ![prefunded accts](https://user-images.githubusercontent.com/83662813/136312021-76b51c59-81b4-4489-a365-63e7841d87dc.png)
@@ -154,11 +153,27 @@ Test the crowdsale (using the PuppercoinCrowdsale file) by sending ether to the 
 
 ## Deploying the Crowdsale.
 
-**This is being done to compare the functionality of the crontracts which were deployed in the PupperCoinCrowdSale and the Crowdsale.**
+**This is being done to show the functionality of the crontracts which were deployed in Crowdsale.**
 
 Deploy the crowdsale (utilizing the coded `fakenow` function) to the Kovan or Ropsten testnet, and store the deployed address for later. Switch MetaMask to your desired network, and use the `Deploy` tab in Remix to deploy your contracts. Take note of the total gas cost as before, and compare it to how costly it would be in reality. Since you are deploying to a network that you don't have control over, faucets will not likely give out 300 test ether. You can simply reduce the goal when deploying to a testnet to a much smaller amount, like 10,000 wei.
 
-(gif)
+Goal Reached
+![GoalReached](https://user-images.githubusercontent.com/83662813/137611417-99ff0e8b-8880-4518-96a6-5c0d6e6b1367.png)
 
+Funded PUP token.
+![pupfunded](https://user-images.githubusercontent.com/83662813/137611497-08e3bdf2-10c2-42f3-b293-61a9f8f09e17.png)
+
+Tested Contract
+![FundingthePUP](https://user-images.githubusercontent.com/83662813/137611565-ac56d6c6-6fb0-4cb3-8ef3-d6a82519b103.gif)
+
+When sending ether to the contract, make sure you hit the `goal` that you set, and `finalize` the sale using the `Crowdsale`'s `finalize` function. In order to finalize, `isOpen` must return false (`isOpen` comes from `TimedCrowdsale` which checks to see if the `close` time has passed yet). Since the `goal` is 300 ether, you may need to send from multiple accounts. If you run out of prefunded accounts in Ganache, you can create a new workspace.
+
+isOpen:
+
+![isOpen](https://user-images.githubusercontent.com/83662813/137611823-c56f2e17-4ae7-4f6e-80ae-f72161bed31f.png)
+
+Take note of the total gas cost as before, and compare it to how costly it would be in reality.
+
+![gascompare2](https://user-images.githubusercontent.com/83662813/137612077-6abcfff2-ac72-4949-a4e7-0f7a93f8fdbc.png)
 
 ### Congratulations..You have funded your coin through a Crowdsale.
